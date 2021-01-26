@@ -1,0 +1,210 @@
+
+page {
+  background: #4d7fc9;/* #ffd541  */
+  color: white;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.chengyutop{
+text-align: center;
+position: relative;
+margin: 10rpx 0;
+}
+.chengyu365-title{
+  font-weight: bold;
+    background-color: #ff847b;
+    border-top-left-radius: 30rpx;
+    border-top-right-radius: 30rpx;
+    width: 180rpx;
+    margin: 0 auto;
+    padding: 5rpx;
+    position: relative;
+    top: 10rpx;
+}
+.chengyutop .chengyuright{
+float:right;
+min-width: 150rpx;
+background-color: #fff;height: 50rpx;border: 3rpx solid #717171;border-radius: 50rpx;
+margin-top: -40rpx;color: #FF5722;font-size: 30rpx;line-height: 50rpx;
+}
+.chengyutop .chengyuright .img{
+ width: 40rpx;height: 40rpx;margin: 5rpx 5rpx 0 10rpx;
+}
+.chengyutop .chengyuright .text{
+  padding: 10rpx 10rpx 10rpx;
+  position: relative;
+  top: -8rpx;
+ }
+ .chengyuchengyu{
+  background-color: #0000006b;
+  width: 95%;
+  margin: 10rpx auto;
+  border-radius: 20rpx;
+  height: 350rpx;
+ }
+ .chengyuchengyu .chenyubox{
+     width: 70%;
+    height: 120rpx;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100rpx 0;
+ }
+ .chengyuchengyuitem{
+  font-size: 48rpx;
+  font-weight: bold;
+  text-align: center;
+  line-height: 120rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border: 2rpx solid #D4C9F5;
+  float: left;
+  border-radius: 4rpx;
+ }
+ .chengyushare{
+  width: 75%;
+  display: flex;
+  margin: 40rpx auto;
+  border-radius: 40rpx;
+  align-items: center;
+  justify-content: center;
+}
+.chengyubangzhu{
+  background-color: #ED5A5A;
+  border-top-left-radius: 30rpx;
+  border-bottom-left-radius: 30rpx;
+  color: #fff;
+  width: 50%;
+  padding: 10px;
+  font-size: 26rpx;
+}
+.chengyujinbi{
+  background-color: #00BCD4;
+  border-top-right-radius: 30rpx;
+  border-bottom-right-radius: 30rpx;
+  width: 50%;
+  padding: 10px;
+  color: #fff;
+  font-size: 26rpx;
+}
+.chengyuxianxiang{
+  width: 90%;
+  margin: 0 auto;
+  padding-left: 36rpx;
+}
+.chengyuopt{
+  margin-right: 36.66rpx;
+  font-size: 64rpx;
+  box-sizing: border-box;
+  width: 130rpx;
+  height: 120rpx;
+  border: 2rpx solid #D4C9F5;
+  line-height: 120rpx;
+  text-align: center;
+  float: left;
+  position: relative;
+  border-radius: 8rpx;
+}
+.chengyubox{
+  position: absolute;left: 0;top: 0;background: rgba(0,0,0,0.6);width: 100%;height: 100%;
+}
+.chengyubox .chengyusuccess{
+   width: 500rpx;height: 500rpx;background-color: #fff;border: 1px solid #000;margin-top: -250rpx;
+   margin-left: -250rpx;position: relative;left: 50%;top: 40%;border-radius: 20rpx;color: #000;z-index: 1000;
+}
+.chengyubtn{
+  width: 380rpx;
+  height: 70rpx;
+  background-color: #f6502a;
+  color: #fff;
+  text-align: center;
+  border-radius: 30rpx;
+  line-height: 70rpx;
+  margin: 15rpx auto;
+}
+.chengyuerr{
+  background-color: #ff847b;color: #fff;
+}
+.chengyusuccess .chengyusuccessbtn{
+  width: 96rpx;
+  height: 96rpx;
+  background-color: #9705EA;
+  border-radius: 50%;
+  margin: 32rpx auto 0rpx;
+}
+.chengyusuccess .img{
+  width: 60rpx; height: 60rpx;margin-top: 15rpx;margin-left: 15rpx;
+}
+.chengyusuccess .chengyutitle{
+  text-align: center;padding: 40rpx;font-size: 32rpx;font-weight: bold;
+}
+.chengyusuccess .chengyucon{
+  text-align: center;padding-bottom: 50rpx;font-size: 30rpx;color: #292929;
+}
+.chengyuhongbao{
+    position: relative;
+    width: 468rpx;
+    height: 740rpx;
+    top: 45%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    text-align: center;
+}
+.chengyuhongbao .chengyubgimg{
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 468rpx;
+    height: 620rpx;
+    border-radius: 16rpx;
+    overflow: hidden;
+    z-index: -1;
+}
+.chengyuhongbao .chengyuopenhongbao{
+  height: 260rpx;
+}
+.chengyuhongbao .chengyushowhongbao{
+  height: 150rpx;
+    margin: 60rpx auto;
+    background-color: #fff;
+    width: 200rpx;
+    border-radius: 20rpx;
+    color: red;
+    font-size: 36rpx;
+    line-height: 150rpx;
+}
+.chengyuhongbao .chengyuhongbaoimg{
+    width: 160rpx;
+    height: 160rpx;
+    border-radius: 50%;
+    display: block;
+    margin: 60rpx auto;
+}
+.chengyuhongbao .chengyutitle{
+    padding: 50rpx;
+    font-size: 60rpx;
+    font-weight: bold;
+}
+.chengyuhongbao .chengyumiaoshu{
+  font-size: 26rpx;
+}
+.chengyuclose{
+  width: 80rpx;
+    height: 80rpx;
+    background-color: #e6e6e6;
+    border-radius: 50%;
+    margin: 80rpx auto;
+}
+.chengyuclose .chengyucloseimg{
+    width: 60rpx;
+    height: 60rpx;
+    margin-top: 10rpx;
+    margin-left: 10rpx;
+    position: relative;
+    z-index: 500;
+}
+.chengyuad{
+  padding: 50rpx 20rpx 20rpx 20rpx;
+  clear: both;
+}

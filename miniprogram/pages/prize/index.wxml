@@ -1,0 +1,46 @@
+<view>
+  <view class="goodsBody">
+    <view class="goodsList" wx:for="{{goodsList}}" data-id="{{item._id}}" bindtap="getGoodsDetail" wx:key="index">
+      <image class="goodsListImages" src="{{item.src}}"></image>
+      <view style="width: 70%;">
+        <view class="goodsName">{{item.name}}</view>
+        <view class="goodsPrice">现价：{{item.price}}</view>
+        <view class="goodsNumBtn">
+          <view class="goodsNum">剩余数量：{{item.num}}</view>
+          <view catchtap="duihuan" class="goodsNumBtn1" data-data="{{item}}" data-id="{{item.id}}">立即兑换</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="myBtn">
+     <view bindtap="toRecord">
+        <image src="../../images/我的资料.png"></image>
+        <text>兑换记录</text>
+      </view>
+      <view bindtap="toShowGold">
+        <image src="../../images/我的金币.png"></image>
+        <text>我的金币</text>
+      </view>
+      <view bindtap="toAddress">
+        <image src="../../images/我的地址.png"></image>
+        <text>我的地址</text>
+      </view>
+  </view>
+  <view class="mine">
+    <mp-dialog title="兑换记录" show="{{showOneButtonDialog}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+      <view>
+        暂时还没有呢！，多答题，多得奖励。
+      </view>
+    </mp-dialog>
+    <mp-dialog title="我的金币" show="{{showGoldDialog}}" bindbuttontap="okGold" buttons="{{buttons}}">
+        <view>您现在有{{allData.money}}币，快用来兑换礼品吧~</view>
+    </mp-dialog>
+  </view>
+  <view bindtap="closeBox" class="bgOver" wx:if="{{goodsBox}}"></view>
+  <view class="goodsBox" wx:if="{{goodsBox}}">
+     <view class="title">商品介绍</view>
+     <view>
+       <image wx:for="{{detail}}" wx:key="{{index}}" src="{{item}}"></image>
+     </view>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+<view class="recordWrap">
+  <view class="recordList" wx:for="{{goodsRecord}}" wx:key="{{index}}">
+    <view class="recordTitle">{{item.name}}</view>
+    <view class="recordTimeAndPrice">
+      <view class="recordTime">{{item.time}}</view>
+      <view class="recordPrice">花费：{{item.price}}</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,35 @@
+
+<view>
+    <view class="chengyutop">
+        <view class="chengyu365-title">第 {{allData.data.level}} 关</view>
+        <view class="chengyuright">
+          <image class="img" src="/images/index/jinbi1.png"></image>
+          <text class="text">{{allData.data.goldCoin}}</text></view>
+    </view>
+    <view class="chengyuchengyu">
+      <view class="chenyubox">
+      <view class="chengyuchengyuitem" wx:for="{{queList.question}}" wx:key="index">{{item}}</view>
+    </view>
+    </view>
+    <view class="chengyushare">
+      <button class="chengyubangzhu" bindtap="addQuestion">添加题目</button>
+      <button class="chengyujinbi" openType="share">获取金币</button>
+    </view>
+    <view class="chengyuxianxiang">
+      <view wx:for="{{queList.keyword}}" wx:key="index" bindtap="check" data-name="{{item}}" class="chengyuopt">{{item}}</view>
+    </view>
+    <!-- <view class="chengyuad" wx:if="{{setting.pg_video_unit_id}}">
+        <ad adTheme="white" adType="video" unitId="{{setting.pg_video_unit_id}}"></ad>
+    </view> -->
+</view>
+<hongbao bind:close="close" bind:lingqu="lingqu" wx:if="{{hasHongbao}}" hbData="{{hbData}}"></hongbao>
+<!-- <view wx:if="{{chengyutanchuguanka}}" class="chengyubox">
+   <view class="chengyusuccess">
+       <view class="chengyusuccessbtn">
+        <image class="img" src="/images/icon/detail/correct.png"></image>
+       </view>
+       <view class="chengyutitle">恭喜闯关成功</view>
+       <view class="chengyucon">连续答题有机会获得红包</view>
+       <view bind:tap="chengyudown" class="chengyubtn">进入下一关</view>
+   </view>
+</view> -->

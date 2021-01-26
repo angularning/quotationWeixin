@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "兑换中心",
+  "usingComponents": {
+    "mp-dialog": "weui-miniprogram/dialog/dialog"
+  }
+}

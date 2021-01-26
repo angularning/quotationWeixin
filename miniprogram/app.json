@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/duihuan/index",
+    "pages/address/index",
+    "pages/article/index",
+    "pages/prize/index",
+    "pages/mine/index",
+    "pages/addQuestion/index",
+    "components/hongbao/hongbao",
+    "pages/game/game"
+  ],
+  "useExtendedLib": {
+    "weui": true
+  },
+  "window": {
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4d7fc9",
+    "navigationBarTitleText": "有奖答题",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

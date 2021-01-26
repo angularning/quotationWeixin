@@ -1,0 +1,16 @@
+<view class="chengyubox" style="z-index: 100;">
+   <view class="chengyuhongbao">
+       <image class="chengyubgimg {{onLq?'onLoadingBg':''}}" src="cloud://a20200426-ogh1a.6132-a20200426-ogh1a-1301968269/project/hongbaoBg.png"></image>
+       <view class="chengyutitle">恭喜您</view>
+       <!-- <view class="chengyucon">您获得一个现金红包</view> -->
+       <view class="chengyuopenhongbao">
+        <view wx:if="{{lqComplate}}" class="chengyushowhongbao">恭喜您获得 {{hbData}} 元</view>
+        <image wx:else bind:tap="lingqu" class="chengyuhongbaoimg {{onLq?'animateOpen':''}}" src="/images/open.png"></image>
+      </view>
+       <view class="chengyumiaoshu">该红包可用于兑换商品等，此活动与苹果以及微信无关</view>
+       <view class="chengyuclose">
+        <image bind:tap="close" class="chengyucloseimg" src="/images/close.png"></image>
+       </view>
+   </view>
+   
+</view>

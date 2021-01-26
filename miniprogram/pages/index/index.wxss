@@ -1,0 +1,134 @@
+/**index.wxss**/
+
+page {
+  background: #4d7fc9;/* #ffd541  */
+  color: white;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.shine {
+  font-size: 38px;
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-weight: bold;
+  background: linear-gradient(-40deg, transparent 0%, transparent 40%, #FFFFFF 50%, transparent 60%, transparent 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 200px;
+  background-repeat: no-repeat;
+  animation: shine 2s ease 0s infinite;
+}
+@keyframes shine {
+  0% {
+    background-position: -200px;
+  }
+  100% {
+    background-position: 200px;
+  }
+}
+.chengyu{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  box-sizing: border-box;
+  padding-bottom: 26rpx;
+  width: 690rpx;
+}
+.chengyuad{
+
+}
+.chengyuuser{
+ text-align: center;
+ padding: 20rpx;
+}
+.chengyuuser .chengyuguize{
+  width: 100rpx;height: 50rpx;display: block;background-color: #fff;border-radius: 20px;color: #000;
+  font-size: 26rpx;font-weight: bold;line-height: 50rpx;border: 4rpx solid #000;position: absolute;left:80%;top:10%;
+}
+.chengyuuser .chengyuavatar{
+    width: 120rpx;height: 120rpx;border-radius: 50%;border: 2rpx solid #fff;
+}
+.chengyuuser .chengyuusername{
+  color: #fff;font-size: 36rpx;
+}
+.chengyudengji{
+  padding:40rpx 40rpx;background-color: rgba(255,255,255,.1);margin-bottom: 32rpx;height:120rpx;margin-top:r20px;color:#fff; border-radius: 20px;
+}
+.chengyuavatar{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+.chengyuleft{
+  margin-bottom:20rpx;display: inline-block;    position: relative;top: -33rpx;left: 10rpx;
+}
+.chengyuusername{
+   padding: 10rpx;
+}
+.chengyudengji .chengyuitem{
+  width:50%;display:line-block;float: left;text-align: left;font-size:26rpx
+ }
+ .chengyudengji .shuigetxt{
+  padding: 0 20rpx;
+  color: #ffeb39;
+ }
+ .chengyuqita{
+  margin: 20rpx 0;
+  height: 120rpx;
+ }
+ .chengyudengji .chengyuitem .img{
+  width:40rpx;height:40rpx;margin-bottom: -10rpx;margin-right:20rpx;
+ }
+.chengyuchuangguan {
+  background-color: #0d2354;
+  text-align: center;
+  width: 650rpx;
+  height: 90rpx;
+  border: none;
+  border-radius: 50rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+  line-height: 90rpx;
+  margin: 32rpx auto;
+  margin-top: 0rpx;
+  position: relative;
+  color: #ffffff;
+  border: 2px solid #5191FD;
+}
+.chengyuqita  .chengyuitem{
+    width: 25%;float: left;text-align: center;font-size: 26rpx;
+}
+.chengyuqita .chengyuitem .img{
+  width:50rpx;height:50rpx;
+}
+.chengyuqita .chengyuitem .chengyutext{
+  color: #fff;
+}
+
+.chengyubox{
+  position: absolute;left: 0;top: 0;background: rgba(0,0,0,0.6);width: 100%;height: 100%;
+}
+.chengyubox .chengyuguize{
+   width: 500rpx;height: 500rpx;background-color: #fff;border: 1px solid #000;margin-top: -250rpx;
+   margin-left: -250rpx;position: relative;left: 50%;top: 50%;border-radius: 20rpx;color: #000;z-index: 100;
+}
+.chengyuclose{
+  position: fixed;width: 100%;height: 100%;
+}
+.chengyuboxtitle{
+  color: #000;font-weight: bold;text-align: center;padding: 30rpx;
+}
+.chengyucon{
+  padding: 20rpx;white-space:pre-wrap;height: 250rpx;overflow-y:auto;font-size: 28rpx;
+  line-height: 50rpx;color: #565656;
+}
+.chengyubtn{
+  width: 300rpx;height: 80rpx;background-color: #4d7fc9;color: #fff;text-align: center;border-radius:30rpx;
+  line-height: 80rpx;margin: 15rpx auto;
+}
+.noLoginBtn{
+  background:none;
+  position: relative;
+  top: 10px;
+  right: 10px;
+}

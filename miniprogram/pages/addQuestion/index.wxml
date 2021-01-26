@@ -1,0 +1,24 @@
+<!--pages/editPage/index.wxml-->
+<view>
+   <view class="editList">
+      <text>关卡编号：</text>
+      <input bindinput="commonSave" data-id="1" value="{{level}}" placeholder="第一关为1，第二关为2，依次填写"></input>
+    </view>
+    <view class="editList">
+      <text>成语名称：</text>
+      <input bindinput="commonSave" data-id="2" value="{{name}}" placeholder="请输入成语"></input>
+    </view>
+     <view class="editList">
+      <text>第几个为空：</text>
+      <input bindinput="commonSave" value="{{emptyNum}}" data-id="3" placeholder="比如输入1，2，3，4 则对应的显示？号"></input>
+    </view>
+    <view class="editList">
+      <text>正确答案：</text>
+      <input bindinput="commonSave" data-id="4" value="{{ok}}" placeholder="输入为空的地方的正确答案"></input>
+    </view>
+    <view class="editList">
+      <text>混淆答案：</text>
+      <input bindinput="commonSave" data-id="5" value="{{hx}}" placeholder="输入三个汉字即可"></input>
+    </view>
+    <button bindtap="toSave"  class="saveBtn">保存</button>
+</view>

@@ -1,0 +1,32 @@
+.recordWrap {}
+
+.recordList {
+  background: #fff;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.recordTitle {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.recordTimeAndPrice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.recordTime {
+  color: #8a8a8a;
+  font-size: 14px;
+}
+
+.recordPrice {
+  color: #e03434;
+}

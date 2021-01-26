@@ -1,0 +1,108 @@
+
+.chengyubox{
+  position: absolute;left: 0;top: 0;background: rgba(0,0,0,0.6);width: 100%;height: 100%;
+}
+.chengyubox .chengyuguize{
+   width: 500rpx;height: 500rpx;background-color: #fff;border: 1px solid #000;margin-top: -250rpx;
+   margin-left: -250rpx;position: relative;left: 50%;top: 40%;border-radius: 20rpx;color: #000;z-index: 100;
+}
+.chengyuclose{
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+.chengyucloseimg{
+  width: 26px;
+  height: 26px;
+}
+.chengyuboxtitle{
+  color: #000;font-weight: bold;text-align: center;padding: 30rpx;
+}
+
+.chengyuhongbao{
+  position: relative;
+  width: 90%;
+  height: 90%;
+  top: 45%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  text-align: center;
+}
+.chengyuhongbao .chengyubgimg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16rpx;
+  overflow: hidden;
+  z-index: -1;
+}
+.chengyuhongbao .chengyuopenhongbao{
+  position: absolute;
+    left: 50%;
+    top: 76%;
+    transform: translateY(-50%) translateX(-50%);
+}
+.chengyuhongbao .chengyushowhongbao{
+  font-size: 36rpx;
+  margin-bottom: 30px;
+  color: #F9DD8E;
+}
+.chengyuhongbao .chengyuhongbaoimg{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  display: block;
+  margin: 60rpx auto;
+}
+.chengyuhongbao .chengyutitle{
+  padding: 50rpx;
+  font-size: 60rpx;
+  font-weight: bold;
+}
+.chengyuhongbao .chengyumiaoshu{
+  font-size: 26rpx;
+    position: fixed;
+    left: 50%;
+    top: 90%;
+    width: 100%;
+    /* bottom: 0; */
+    transform: translateY(-50%) translateX(-50%);
+}
+@keyframes rotation{
+  0% {
+    transform: rotateY(0deg)
+  }
+  50% {
+    transform: rotateY(180deg)
+  }
+  100% {
+    transform:rotateY(0deg)
+  }
+  }
+  .animateOpen{
+    /* transform:rotateY(360deg); */
+    animation: rotation 1s .1s ease both;
+  }
+
+.onLoadingBg{
+    animation:sucaijiayuan 1s .1s ease both;
+}
+  @keyframes sucaijiayuan {
+    0% {
+    transform:scale(1)
+  }
+  10%,20% {
+    transform:scale(0.8) rotate(-8deg)
+  }
+  30%,50%,70%,90% {
+    transform:scale(1.1) rotate(2deg)
+  }
+  40%,60%,80% {
+    transform:scale(1.1) rotate(-8deg)
+  }
+  100% {
+    transform:scale(1) rotate(0)
+  }
+}
